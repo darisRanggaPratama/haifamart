@@ -1,0 +1,60 @@
+<html>
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+<link rel=stylesheet data-name='vs/editor/editor.main' href='../monaco/editor.main.css' type='text/css'>
+<link rel='stylesheet' type='text/css' href='../css/style.css'></link>
+<script type='text/javascript' src='../js/functions.js'></script>
+<script async='async' type='text/javascript' src='../monaco/mysql.js'></script>
+<script async='async' type='text/javascript' src='../monaco/sql.js'></script>
+<script src='../monaco/loader.js'></script>
+<script src='../monaco/editor.main.nls.js'></script>
+<script src='../monaco/editor.main.js'></script>
+</head>
+<body class='sql-body' id='scrollable-body'>
+<div id='left-side' class='left-side'><div class='panel'>
+<span class='panel-title source'>&nbsp;Source</span>
+<img tabindex='0' aria-label='Previous problem' role='button' class='nav-button nav-button-disabled' id='source_previous_problem' src='../img/previous_problem.gif' onclick='handleProblemButtonClick(-1, true)' title='Previous problem' />
+<img tabindex='0' aria-label='Next problem' role='button' class='nav-button nav-button-disabled' id='source_next_problem' src='../img/next_problem.gif' onclick='handleProblemButtonClick(1, true)' title='Next problem' />
+<img tabindex='0' aria-label='Previous bookmark' role='button' class='nav-button nav-button-disabled' id='source_previous_bookmark' src='../img/previous_bookmark.gif' onclick='handleBookmarkButtonClick(-1, true)' title='Previous bookmark' />
+<img tabindex='0' aria-label='Next bookmark' role='button' class='nav-button nav-button-disabled' id='source_next_bookmark' src='../img/next_bookmark.gif' onclick='handleBookmarkButtonClick(1, true)' title='Next bookmark' />
+<img tabindex='0' aria-label='Clear bookmarks' role='button' class='nav-button nav-button-disabled' id='source_clear_bookmarks' src='../img/clear_bookmarks.gif' onclick='handleBookmarkButtonClick(0, true)' title='Clear bookmarks' />
+<a class='raw-source-link' target='_blank' aria-label='Raw source' href='./src.sql.txt');'>Raw source</a>
+</div>
+<div class='editor-container'>
+<div id='monaco-left-side'></div><pre id='monaco-left-side-sql'>
+CREATE
+	TABLE `region`
+		(
+			`region` varchar(8) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL
+		)  ENGINE = InnoDB DEFAULT  CHARSET = utf8mb4  COLLATE = utf8mb4_general_ci;
+</pre></div></div><div id='resize-bar' class='resize-bar'></div><div id='right-side' class='right-side'><div class='panel'>
+<span class='panel-title target'>&nbsp;Target</span>
+<img tabindex='0' aria-label='Previous problem' role='button' class='nav-button nav-button-disabled' id='target_previous_problem' src='../img/previous_problem.gif' onclick='handleProblemButtonClick(-1, false)' title='Previous problem' />
+<img tabindex='0' aria-label='Next problem' role='button' class='nav-button nav-button-disabled' id='target_next_problem' src='../img/next_problem.gif' onclick='handleProblemButtonClick(1, false)' title='Next problem' />
+<img tabindex='0' aria-label='Previous bookmark' role='button' class='nav-button nav-button-disabled' id='target_previous_bookmark' src='../img/previous_bookmark.gif' onclick='handleBookmarkButtonClick(-1, false)' title='Previous bookmark' />
+<img tabindex='0' aria-label='Next bookmark' role='button' class='nav-button nav-button-disabled' id='target_next_bookmark' src='../img/next_bookmark.gif' onclick='handleBookmarkButtonClick(1, false)' title='Next bookmark' />
+<img tabindex='0' aria-label='Clear bookmarks' role='button' class='nav-button nav-button-disabled' id='target_clear_bookmarks' src='../img/clear_bookmarks.gif' onclick='handleBookmarkButtonClick(0, false)' title='Clear bookmarks' />
+</div>
+<div class='editor-container'>
+<div id='monaco-right-side'></div><pre id='monaco-right-side-sql'>
+/*
+*   SSMA informational messages:
+*   M2SS0003: The following SQL clause was ignored during conversion: COLLATE = utf8mb4_general_ci.
+*/
+
+CREATE TABLE TEST.[region]
+(
+	/*
+	*   SSMA warning messages:
+	*   M2SS0183: The following SQL clause was ignored during conversion: COLLATE utf8mb4_general_ci.
+	*/
+
+	region nvarchar(8) NULL DEFAULT NULL
+)
+GO</pre></div></div><script>
+var sourceLanguage = 'mysql';
+var sourceEditorSelections = [{start:100, end:112, guid:'5f8f9ee9-92e6-4479-b46d-0f13fe947b47', reflection:['21131c99-7eab-4f77-b311-1fcb4d7c23cf'], convmessInfoIds:[], convmessWarningIds:[], convmessErrorIds:[]},{start:27, end:112, guid:'2a661d3e-029d-4f32-8a01-a3675cde2e89', reflection:['d20a3106-872a-4f58-8621-1551f1529391'], convmessInfoIds:[], convmessWarningIds:[], convmessErrorIds:[]},{start:7, end:190, guid:'9ea6eb36-3c4c-45fe-bc58-ef6fd00d7d06', reflection:['81d582bf-7d02-4524-9a92-5d1b785861ec'], convmessInfoIds:[], convmessWarningIds:[], convmessErrorIds:[]},{start:0, end:191, guid:'6ca4eebc-14fa-4812-ae8c-ef438ec84318', reflection:['bcfb8e91-692c-4f61-8c6c-b9159f68fc16'], convmessInfoIds:[], convmessWarningIds:[], convmessErrorIds:[]},{start:0, end:191, guid:'4947e1dc-0de0-4621-a382-01af7ca97616', reflection:['bcfb8e91-692c-4f61-8c6c-b9159f68fc16'], convmessInfoIds:[], convmessWarningIds:[], convmessErrorIds:[]}];
+var targetLanguage = 'sql';
+var targetEditorSelections = [{start:331, end:343, guid:'21131c99-7eab-4f77-b311-1fcb4d7c23cf', reflection:['5f8f9ee9-92e6-4479-b46d-0f13fe947b47'], convmessInfoIds:[], convmessWarningIds:[], convmessErrorIds:[]},{start:169, end:343, guid:'d20a3106-872a-4f58-8621-1551f1529391', reflection:['2a661d3e-029d-4f32-8a01-a3675cde2e89'], convmessInfoIds:[], convmessWarningIds:['M2SS0183'], convmessErrorIds:[]},{start:148, end:345, guid:'81d582bf-7d02-4524-9a92-5d1b785861ec', reflection:['9ea6eb36-3c4c-45fe-bc58-ef6fd00d7d06'], convmessInfoIds:[], convmessWarningIds:[], convmessErrorIds:[]},{start:0, end:345, guid:'bcfb8e91-692c-4f61-8c6c-b9159f68fc16', reflection:['6ca4eebc-14fa-4812-ae8c-ef438ec84318','4947e1dc-0de0-4621-a382-01af7ca97616'], convmessInfoIds:['M2SS0003'], convmessWarningIds:[], convmessErrorIds:[]}];
+</script><script src='../js/code.js'></script></body></html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Objects tree section</title>
+    <link media="all" rel="stylesheet" type="text/css" href="css/treeview.css"/>
+    <script type="text/javascript" src="js/functions.js"></script>
+    <script type="text/javascript" src="js/treeview.js"></script>
+  </head>
+  <body id="tree-body" onresize="resetButtonStatus();">
+    <a id="expander-left" onclick="showTree(!isExpanded());return false;" class="expander-left" aria-label="Objects tree section expanded, press Enter to collapse" href="javascript:void(0);">
+      <span></span>
+    </a>
+    <div id="tree" class="tree">
+      <ul class="dNode collapsed">
+        <div class="holder">
+          <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="test, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+          <img src="img/source_database_error.gif" alt="database"></img>
+          <a class="node" role="button" href="javascript:void(0);" name="test - 16.0h" id="159db2db-73c1-4304-b62e-9f11e4b81344" onclick="pathTo(this, &#39;159db2db-73c1-4304-b62e-9f11e4b81344&#39;, null);return false;" aria-label="Show details for database test - 16.0h, ">test<div class='tree-node-severity-label warning'>16.0h</div>
+          </a>
+        </div>
+        <ul>
+          <li class="dNode collapsed">
+            <div class="holder">
+              <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Tables, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+              <img src="img/folder_error.gif" alt="category"></img>
+              <a class="node" role="button" href="javascript:void(0);" name="Tables - 16.0h" id="6780f802-019b-43cc-ab6e-ede83412f0c2" onclick="pathTo(this, &#39;6780f802-019b-43cc-ab6e-ede83412f0c2&#39;, null);return false;" aria-label="Show details for category Tables - 16.0h, ">Tables<div class='tree-node-severity-label warning'>16.0h</div>
+              </a>
+            </div>
+            <ul>
+              <li class="dNode collapsed">
+                <div class="holder">
+                  <a role="button" class="empty"></a>
+                  <img src="img/table_error.gif" alt="table"></img>
+                  <a class="node" role="button" href="javascript:void(0);" name="category - 0.5h" id="b8a1dac3-095d-49c3-9d6b-dc7d12e622bc" onclick="pathTo(this, &#39;b8a1dac3-095d-49c3-9d6b-dc7d12e622bc&#39;, null);return false;" aria-label="Show details for table category - 0.5h, ">category<div class='tree-node-severity-label warning'>0.5h</div>
+                  </a>
+                </div>
+              </li>
+              <li class="dNode collapsed">
+                <div class="holder">
+                  <a role="button" class="empty"></a>
+                  <img src="img/table_error.gif" alt="table"></img>
+                  <a class="node" role="button" href="javascript:void(0);" name="city - 0.5h" id="469542ad-9365-493e-b89e-8eb3b3aff4c8" onclick="pathTo(this, &#39;469542ad-9365-493e-b89e-8eb3b3aff4c8&#39;, null);return false;" aria-label="Show details for table city - 0.5h, ">city<div class='tree-node-severity-label warning'>0.5h</div>
+                  </a>
+                </div>
+              </li>
+              <li class="dNode collapsed">
+                <div class="holder">
+                  <a role="button" class="empty"></a>
+                  <img src="img/table_error.gif" alt="table"></img>
+                  <a class="node" role="button" href="javascript:void(0);" name="customer - 1.0h" id="2e7d4416-81ed-4009-83bd-3f7f427bc20d" onclick="pathTo(this, &#39;2e7d4416-81ed-4009-83bd-3f7f427bc20d&#39;, null);return false;" aria-label="Show details for table customer - 1.0h, ">customer<div class='tree-node-severity-label warning'>1.0h</div>
+                  </a>
+                </div>
+              </li>
+              <li class="dNode collapsed">
+                <div class="holder">
+                  <a role="button" class="empty"></a>
+                  <img src="img/table_error.gif" alt="table"></img>
+                  <a class="node" role="button" href="javascript:void(0);" name="detail - 7.5h" id="228b4a0a-219c-49f4-be36-203602f1078a" onclick="pathTo(this, &#39;228b4a0a-219c-49f4-be36-203602f1078a&#39;, null);return false;" aria-label="Show details for table detail - 7.5h, ">detail<div class='tree-node-severity-label warning'>7.5h</div>
+                  </a>
+                </div>
+              </li>
+              <li class="dNode collapsed">
+                <div class="holder">
+                  <a role="button" class="empty"></a>
+                  <img src="img/table_error.gif" alt="table"></img>
+                  <a class="node" role="button" href="javascript:void(0);" name="header - 1.0h" id="081a9893-8569-4830-99f6-eae5f64a8648" onclick="pathTo(this, &#39;081a9893-8569-4830-99f6-eae5f64a8648&#39;, null);return false;" aria-label="Show details for table header - 1.0h, ">header<div class='tree-node-severity-label warning'>1.0h</div>
+                  </a>
+                </div>
+              </li>
+              <li class="dNode collapsed">
+                <div class="holder">
+                  <a role="button" class="empty"></a>
+                  <img src="img/table_error.gif" alt="table"></img>
+                  <a class="node" role="button" href="javascript:void(0);" name="person - 1.0h" id="6852f58f-9276-490e-9ad7-94ba7bfa6b93" onclick="pathTo(this, &#39;6852f58f-9276-490e-9ad7-94ba7bfa6b93&#39;, null);return false;" aria-label="Show details for table person - 1.0h, ">person<div class='tree-node-severity-label warning'>1.0h</div>
+                  </a>
+                </div>
+              </li>
+              <li class="dNode collapsed">
+                <div class="holder">
+                  <a role="button" class="empty"></a>
+                  <img src="img/table_error.gif" alt="table"></img>
+                  <a class="node" role="button" href="javascript:void(0);" name="product - 1.0h" id="f866d763-7d11-4444-bde1-f57a66d47063" onclick="pathTo(this, &#39;f866d763-7d11-4444-bde1-f57a66d47063&#39;, null);return false;" aria-label="Show details for table product - 1.0h, ">product<div class='tree-node-severity-label warning'>1.0h</div>
+                  </a>
+                </div>
+              </li>
+              <li class="dNode collapsed">
+                <div class="holder">
+                  <a role="button" class="empty"></a>
+                  <img src="img/table_error.gif" alt="table"></img>
+                  <a class="node" role="button" href="javascript:void(0);" name="region - 0.5h" id="41d51888-e7d8-483e-9994-597b555a7e0a" onclick="pathTo(this, &#39;41d51888-e7d8-483e-9994-597b555a7e0a&#39;, null);return false;" aria-label="Show details for table region - 0.5h, ">region<div class='tree-node-severity-label warning'>0.5h</div>
+                  </a>
+                </div>
+              </li>
+              <li class="dNode collapsed">
+                <div class="holder">
+                  <a role="button" class="empty"></a>
+                  <img src="img/table_error.gif" alt="table"></img>
+                  <a class="node" role="button" href="javascript:void(0);" name="return - 1.0h" id="533e7db9-1ccd-4710-ba30-52ee5a7dbb2d" onclick="pathTo(this, &#39;533e7db9-1ccd-4710-ba30-52ee5a7dbb2d&#39;, null);return false;" aria-label="Show details for table return - 1.0h, ">return<div class='tree-node-severity-label warning'>1.0h</div>
+                  </a>
+                </div>
+              </li>
+              <li class="dNode collapsed">
+                <div class="holder">
+                  <a role="button" class="empty"></a>
+                  <img src="img/table_error.gif" alt="table"></img>
+                  <a class="node" role="button" href="javascript:void(0);" name="segment - 0.5h" id="fd36955a-ea7e-4505-9b6f-c36562967126" onclick="pathTo(this, &#39;fd36955a-ea7e-4505-9b6f-c36562967126&#39;, null);return false;" aria-label="Show details for table segment - 0.5h, ">segment<div class='tree-node-severity-label warning'>0.5h</div>
+                  </a>
+                </div>
+              </li>
+              <li class="dNode collapsed">
+                <div class="holder">
+                  <a role="button" class="empty"></a>
+                  <img src="img/table_error.gif" alt="table"></img>
+                  <a class="node" role="button" href="javascript:void(0);" name="shipmode - 0.5h" id="2aa75a29-3944-451e-9428-8cc796687553" onclick="pathTo(this, &#39;2aa75a29-3944-451e-9428-8cc796687553&#39;, null);return false;" aria-label="Show details for table shipmode - 0.5h, ">shipmode<div class='tree-node-severity-label warning'>0.5h</div>
+                  </a>
+                </div>
+              </li>
+              <li class="dNode collapsed">
+                <div class="holder">
+                  <a role="button" class="empty"></a>
+                  <img src="img/table_error.gif" alt="table"></img>
+                  <a class="node" role="button" href="javascript:void(0);" name="state - 0.5h" id="9091df1b-b83d-4dfd-9a15-fd24c75cb2a0" onclick="pathTo(this, &#39;9091df1b-b83d-4dfd-9a15-fd24c75cb2a0&#39;, null);return false;" aria-label="Show details for table state - 0.5h, ">state<div class='tree-node-severity-label warning'>0.5h</div>
+                  </a>
+                </div>
+              </li>
+              <li class="dNode collapsed">
+                <div class="holder">
+                  <a role="button" class="empty"></a>
+                  <img src="img/table_error.gif" alt="table"></img>
+                  <a class="node" role="button" href="javascript:void(0);" name="subcategory - 0.5h" id="8391097b-49dd-4dd1-8030-a4c2d22537f5" onclick="pathTo(this, &#39;8391097b-49dd-4dd1-8030-a4c2d22537f5&#39;, null);return false;" aria-label="Show details for table subcategory - 0.5h, ">subcategory<div class='tree-node-severity-label warning'>0.5h</div>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </ul>
+    </div>
+    <script type="text/javascript">window.addEventListener('DOMContentLoaded', function () {document.getElementById('159db2db-73c1-4304-b62e-9f11e4b81344').click();});</script>
+  </body>
+</html>
